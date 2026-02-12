@@ -1,0 +1,27 @@
+# PlatformIO
+.pio/
+.platformio/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local development/agent files
+CLAUDE.md
+.claude/
+
+# CRITICAL: Secrets - never commit credentials
+src/Secrets.h
+src/secrets.h
+secrets.h
+
+# Temporary/backup files
+*.orig
+*.tmp
+*.zip
