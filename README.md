@@ -52,9 +52,9 @@ pio run -t upload --upload-port esp32c6-DEVICE_ID
 
 This firmware depends on the following public libraries:
 
-- **[C6SuperMiniRgbLedLibrary](https://codeberg.org/trailcurrentopensource/C6SuperMiniRgbLedLibrary)** (v0.0.1) - RGB LED status indicator driver
-- **[Esp32C6OtaUpdateLibrary](https://codeberg.org/trailcurrentopensource/Esp32C6OtaUpdateLibrary)** (v0.0.1) - Over-the-air firmware update functionality
-- **[Esp32C6TwaiTaskBasedLibrary](https://codeberg.org/trailcurrentopensource/Esp32C6TwaiTaskBasedLibrary)** (v0.0.2) - CAN bus communication interface
+- **[C6SuperMiniRgbLedLibrary](https://github.com/trailcurrentoss/C6SuperMiniRgbLedLibrary)** (v0.0.1) - RGB LED status indicator driver
+- **[Esp32C6OtaUpdateLibrary](https://github.com/trailcurrentoss/Esp32C6OtaUpdateLibrary)** (v0.0.1) - Over-the-air firmware update functionality
+- **[Esp32C6TwaiTaskBasedLibrary](https://github.com/trailcurrentoss/Esp32C6TwaiTaskBasedLibrary)** (v0.0.2) - CAN bus communication interface
 
 All dependencies are automatically resolved by PlatformIO during the build process.
 
