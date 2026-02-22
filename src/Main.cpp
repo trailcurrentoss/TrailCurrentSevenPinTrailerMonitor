@@ -4,7 +4,7 @@
 #include "TrailerConnection.h"
 #include <Arduino.h>
 #include <driver/gpio.h>
-#include "Secrets.h"
+#include <Preferences.h>
 #include <TwaiTaskBased.h>
 // Define the pins we'll be using
 #define TRAILER_VOLTAGE_PIN 2
@@ -14,26 +14,115 @@
 #define TRAILER_RUNNING_LIGHT_PIN 0
 
 RgbLed statusLed(8);
-OtaUpdate otaUpdate(statusLed, 60000, ssid, password);
+OtaUpdate otaUpdate(statusLed, 60000, "", "");
+
+// WiFi credential reception state (CAN ID 0x01 protocol)
+bool wifiConfigInProgress = false;
+uint8_t wifiSsidBuffer[33];       // Max 32 chars + null
+uint8_t wifiPasswordBuffer[64];   // Max 63 chars + null
+uint8_t wifiSsidLen = 0;          // Expected total SSID length
+uint8_t wifiPasswordLen = 0;      // Expected total password length
+uint8_t wifiSsidReceived = 0;     // Bytes received so far
+uint8_t wifiPasswordReceived = 0;
+
+void saveWifiCredentials(const char* ssid, const char* password) {
+  Preferences prefs;
+  prefs.begin("wifi", false);  // read-write
+  prefs.putString("ssid", ssid);
+  prefs.putString("password", password);
+  prefs.end();
+  debugf("[WiFi] Credentials saved to NVS (SSID: %s)\n", ssid);
+}
+
+void handleWifiConfigMessage(const twai_message_t &msg) {
+  uint8_t msgType = msg.data[0];
+
+  switch (msgType) {
+    case 0x01: {  // Start message
+      wifiSsidLen = msg.data[1];
+      wifiPasswordLen = msg.data[2];
+      wifiSsidReceived = 0;
+      wifiPasswordReceived = 0;
+      memset(wifiSsidBuffer, 0, sizeof(wifiSsidBuffer));
+      memset(wifiPasswordBuffer, 0, sizeof(wifiPasswordBuffer));
+      wifiConfigInProgress = true;
+      debugf("[WiFi] Config start: SSID len=%d, Password len=%d\n", wifiSsidLen, wifiPasswordLen);
+      break;
+    }
+
+    case 0x02: {  // SSID chunk
+      if (!wifiConfigInProgress) break;
+      uint8_t dataBytes = msg.data_length_code - 2;
+      uint8_t remaining = wifiSsidLen - wifiSsidReceived;
+      if (dataBytes > remaining) dataBytes = remaining;
+      if (wifiSsidReceived + dataBytes <= 32) {
+        memcpy(wifiSsidBuffer + wifiSsidReceived, &msg.data[2], dataBytes);
+        wifiSsidReceived += dataBytes;
+      }
+      break;
+    }
+
+    case 0x03: {  // Password chunk
+      if (!wifiConfigInProgress) break;
+      uint8_t dataBytes = msg.data_length_code - 2;
+      uint8_t remaining = wifiPasswordLen - wifiPasswordReceived;
+      if (dataBytes > remaining) dataBytes = remaining;
+      if (wifiPasswordReceived + dataBytes <= 63) {
+        memcpy(wifiPasswordBuffer + wifiPasswordReceived, &msg.data[2], dataBytes);
+        wifiPasswordReceived += dataBytes;
+      }
+      break;
+    }
+
+    case 0x04: {  // End message with checksum
+      if (!wifiConfigInProgress) break;
+      wifiConfigInProgress = false;
+
+      uint8_t checksum = 0;
+      for (uint8_t i = 0; i < wifiSsidReceived; i++) checksum ^= wifiSsidBuffer[i];
+      for (uint8_t i = 0; i < wifiPasswordReceived; i++) checksum ^= wifiPasswordBuffer[i];
+
+      if (checksum == msg.data[1] && wifiSsidReceived == wifiSsidLen && wifiPasswordReceived == wifiPasswordLen) {
+        wifiSsidBuffer[wifiSsidReceived] = '\0';
+        wifiPasswordBuffer[wifiPasswordReceived] = '\0';
+        saveWifiCredentials((const char*)wifiSsidBuffer, (const char*)wifiPasswordBuffer);
+      } else {
+        debugf("[WiFi] Config failed: checksum %s, SSID %d/%d bytes, Password %d/%d bytes\n",
+               (checksum == msg.data[1]) ? "OK" : "MISMATCH",
+               wifiSsidReceived, wifiSsidLen, wifiPasswordReceived, wifiPasswordLen);
+      }
+      break;
+    }
+  }
+}
 
 void onCanRx(const twai_message_t &msg) {
   debugf("RX ID: 0x%X DLC: %d\n", msg.identifier, msg.data_length_code);
-  // We received a CAN bus message that may mean an update is available.
   if (msg.identifier == 0) {
-    // Create a char to hold the name of who the update is for.
     char updateForHostName[14];
-    // Get the current host name of this device
     String currentHostName = otaUpdate.getHostName();
-    // Fomrat the string of the upate so it matches the pattern used by
-    // espressif
     sprintf(updateForHostName, "esp32c6-%X%X%X", msg.data[0], msg.data[1],
             msg.data[2]);
-    // An update is ready for this device if the two match.
     if (currentHostName.equals(updateForHostName)) {
-      debugln("Need to wait for OTA");
-      // Pause and see if an OTA is needed
-      otaUpdate.waitForOta();
+      debugln("[OTA] Hostname matched - reading WiFi credentials from NVS");
+      Preferences prefs;
+      prefs.begin("wifi", true);  // read-only
+      String ssid = prefs.getString("ssid", "");
+      String password = prefs.getString("password", "");
+      prefs.end();
+
+      if (ssid.length() > 0 && password.length() > 0) {
+        debugf("[OTA] Using stored WiFi credentials (SSID: %s)\n", ssid.c_str());
+        OtaUpdate ota(statusLed, 60000, ssid.c_str(), password.c_str());
+        ota.waitForOta();
+        debugln("[OTA] OTA mode exited - resuming normal operation");
+      } else {
+        debugln("[OTA] ERROR: No WiFi credentials in NVS - cannot start OTA");
+      }
     }
+  }
+  else if (msg.identifier == 0x01) {
+    handleWifiConfigMessage(msg);
   }
 }
 
@@ -45,24 +134,18 @@ void onTrailerStateChange(TrailerConnectionState trailer_connection_state) {
 }
 
 void setup() {
-  // Always start serial even if only to output that debugging is disabled.
   Serial.begin(115200);
-// These should be the only two Serial.print statements. All others will use
-// debug, debugln, and debugf so they are removed for production.
 #if DEBUG == 0
   Serial.println(
       "Debugging is disabled no more output will be written here...");
 #else
   Serial.println("Debugging started");
 #endif
-  // Initialize the onboard LED first so we can use it to communicate status.
   statusLed.begin();
   statusLed.setBrightnessPercent(1);
-  // Now set the callbacks and initialize the CAN helper.
   TwaiTaskBased::onReceive(onCanRx);
   TwaiTaskBased::onTransmit(onCanTx);
   TwaiTaskBased::begin(GPIO_NUM_15, GPIO_NUM_14);
-  // Register all the callbacks and start the TrailerConnection
   TrailerConnection::onTrailerStateChange(onTrailerStateChange);
   TrailerConnection::begin((gpio_num_t)TRAILER_VOLTAGE_PIN, (gpio_num_t)TRAILER_LEFT_TURN_OR_BRAKE, (gpio_num_t)TRAILER_RIGHT_TURN_OR_BRAKE,(gpio_num_t)TRAILER_BRAKE_PIN, (gpio_num_t)TRAILER_RUNNING_LIGHT_PIN);
   statusLed.green();
@@ -74,7 +157,7 @@ void loop() {
   msg.identifier = 0x123;
   msg.data_length_code = 2;
   msg.data[0] = 0xAB;
-  msg.data[1] = 0xCD; 
+  msg.data[1] = 0xCD;
 
   // TwaiTaskBased::send(msg);
 }
