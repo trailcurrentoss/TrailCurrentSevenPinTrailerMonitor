@@ -1,6 +1,6 @@
 # TrailCurrent Seven Pin Trailer Monitor
 
-Firmware module that monitors the state of a 7-pin trailer connection including voltage, turn signals, brakes, and running lights, reporting status over a CAN bus interface.
+Firmware module that monitors the state of a 7-pin trailer connection including voltage, turn signals, brakes, and running lights, reporting status over a CAN bus interface. Part of the [TrailCurrent](https://trailcurrent.com) open-source vehicle platform.
 
 ## Overview
 
