@@ -1,0 +1,2962 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae")
+	(paper "A3")
+
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0.9652 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Unpolarized capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_keywords" "cap capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_fp_filters" "C_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "C_0_1"
+				(polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+				(polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+			)
+			(symbol "C_1_1"
+				(pin passive line (at 0 3.81 270) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -3.81 90) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+			(property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at -1.778 0 90) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "R_0_1"
+				(rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+			)
+			(symbol "R_1_1"
+				(pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Isolator:TLP290"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at -5.08 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "TLP290" (at 0 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm" (at -21.59 -5.08 0) (effects (font (size 1.27 1.27) (italic yes)) (justify left) (hide yes)))
+			(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=12882&prodName=TLP290" (at 0.635 0 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+			(property "Description" "AC/DC Phototransistor Optocoupler, Vce 80V, CTR 50-600%, SOP4" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_keywords" "NPN AC DC Phototransistor Optocoupler" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_fp_filters" "SOP*4*4.4x2.6mm*P1.27mm*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "TLP290_0_1"
+				(rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width 0.254) (type default)) (fill (type background)))
+				(polyline (pts (xy -5.08 2.54) (xy -1.27 2.54) (xy -1.27 -0.635)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy -3.81 0.635) (xy -2.54 0.635)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(circle (center -3.175 2.54) (radius 0.127) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy -3.175 0.635) (xy -3.81 -0.635) (xy -2.54 -0.635) (xy -3.175 0.635)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline (pts (xy -3.175 -0.635) (xy -3.175 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy -3.175 -0.635) (xy -3.175 -2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(circle (center -3.175 -2.54) (radius 0.127) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy -1.905 -0.635) (xy -0.635 -0.635)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline (pts (xy -1.27 -0.635) (xy -1.27 -2.54) (xy -5.08 -2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy -1.27 -0.635) (xy -1.905 0.635) (xy -0.635 0.635) (xy -1.27 -0.635)) (stroke (width 0.254) (type default)) (fill (type none)))
+				(polyline (pts (xy 0.127 0.508) (xy 1.397 0.508) (xy 1.016 0.381) (xy 1.016 0.635) (xy 1.397 0.508)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0.127 -0.508) (xy 1.397 -0.508) (xy 1.016 -0.635) (xy 1.016 -0.381) (xy 1.397 -0.508)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 2.54 1.905) (xy 2.54 -1.905)) (stroke (width 0.508) (type default)) (fill (type none)))
+				(polyline (pts (xy 2.54 0.635) (xy 4.445 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 3.048 -1.651) (xy 3.556 -1.143) (xy 4.064 -2.159) (xy 3.048 -1.651)) (stroke (width 0) (type default)) (fill (type outline)))
+				(polyline (pts (xy 4.445 2.54) (xy 5.08 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 4.445 -2.54) (xy 2.54 -0.635)) (stroke (width 0) (type default)) (fill (type outline)))
+				(polyline (pts (xy 4.445 -2.54) (xy 5.08 -2.54)) (stroke (width 0) (type default)) (fill (type none)))
+			)
+			(symbol "TLP290_1_1"
+				(pin passive line (at -7.62 2.54 0) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -7.62 -2.54 0) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 7.62 2.54 180) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 7.62 -2.54 180) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "MountingHole" (at 0 3.175 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Mounting Hole without connection" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_keywords" "mounting hole" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "ki_fp_filters" "MountingHole*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "MountingHole_0_1"
+				(circle (center 0 0) (radius 1.27) (stroke (width 1.27) (type default)) (fill (type none)))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TrailCurrentSymbolLibrary:ESP32-C6-SuperMini"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 12.7 2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "ESP32-C6-SuperMini" (at 12.7 0 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "TrailCurrentFootprints:ESP32-C6-SuperMini_SMD" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "https://www.espboards.dev/esp32/esp32-c6-super-mini/" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "ESP32-C6 Super Mini Development Board, WiFi 6, BLE 5, Zigbee, Thread" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "ESP32-C6-SuperMini_0_1"
+				(rectangle (start 5.08 1.27) (end 20.32 -24.13) (stroke (width 0.254) (type default)) (fill (type background)))
+				(pin bidirectional line (at 0 0 0) (length 5.08) (name "TX" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -2.54 0) (length 5.08) (name "RX" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -5.08 0) (length 5.08) (name "GPIO0" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -7.62 0) (length 5.08) (name "GPIO1" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -10.16 0) (length 5.08) (name "GPIO2" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -12.7 0) (length 5.08) (name "GPIO3" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -15.24 0) (length 5.08) (name "GPIO4" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -17.78 0) (length 5.08) (name "GPIO5" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -20.32 0) (length 5.08) (name "GPIO6" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 0 -22.86 0) (length 5.08) (name "GPIO7" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at 25.4 0 180) (length 5.08) (name "5V" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at 25.4 -2.54 180) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+				(pin power_out line (at 25.4 -5.08 180) (length 5.08) (name "3V3" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 25.4 -7.62 180) (length 5.08) (name "GPIO20" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 25.4 -10.16 180) (length 5.08) (name "GPIO19" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 25.4 -12.7 180) (length 5.08) (name "GPIO18" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 25.4 -15.24 180) (length 5.08) (name "GPIO15" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 25.4 -17.78 180) (length 5.08) (name "GPIO14" (effects (font (size 1.27 1.27)))) (number "18" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 25.4 -20.32 180) (length 5.08) (name "GPIO9" (effects (font (size 1.27 1.27)))) (number "19" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 25.4 -22.86 180) (length 5.08) (name "GPIO8" (effects (font (size 1.27 1.27)))) (number "20" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TrailCurrentSymbolLibrary:Mini560"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 12.7 2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Mini560" (at 12.7 0 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "TrailCurrentFootprints:Mini560" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Mini560 DC-DC Buck Converter Module, 5A, 7-20V to 3.3/5/9/12V" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "Mini560_0_1"
+				(rectangle (start 5.08 1.27) (end 20.32 -20.32) (stroke (width 0.254) (type default)) (fill (type background)))
+				(pin power_in line (at 0 0 0) (length 5.08) (name "VIN+" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -2.54 0) (length 5.08) (name "VIN+" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at 0 -5.08 0) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -7.62 0) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin input line (at 12.7 -25.4 90) (length 5.08) (name "EN" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 25.4 -7.62 180) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 25.4 -5.08 180) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+				(pin power_out line (at 25.4 -2.54 180) (length 5.08) (name "VOUT+" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 25.4 0 180) (length 5.08) (name "VOUT+" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TrailCurrentSymbolLibrary:S4B-XH-SM4-TB"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J" (at -3.81 5.715 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+			(property "Value" "S4B-XH-SM4-TB" (at -3.81 -10.16 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+			(property "Footprint" "TrailCurrentFootprints:JST_S4B-XH-SM4-TB" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify bottom) (hide yes)))
+			(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "JST XH 4-pin SMD Connector, 2.50mm Pitch, Horizontal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "S4B-XH-SM4-TB_0_0"
+				(rectangle (start -3.81 -7.62) (end 5.08 5.08) (stroke (width 0.254) (type default)) (fill (type background)))
+				(rectangle (start -3.175 2.2225) (end -1.5875 2.8575) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -0.3175) (end -1.5875 0.3175) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -2.8575) (end -1.5875 -2.2225) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -5.3975) (end -1.5875 -4.7625) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(pin passive line (at -7.62 2.54 0) (length 5.08) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 0 0) (length 5.08) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 -2.54 0) (length 5.08) (name "3" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 -5.08 0) (length 5.08) (name "4" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TrailCurrentSymbolLibrary:S8B-XH-SM4-TB"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J" (at -3.81 10.795 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+			(property "Value" "S8B-XH-SM4-TB" (at -3.81 -20.32 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+			(property "Footprint" "TrailCurrentFootprints:JST_S8B-XH-SM4-TB" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify bottom) (hide yes)))
+			(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "JST XH 8-pin SMD Connector, 2.50mm Pitch, Horizontal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "S8B-XH-SM4-TB_0_0"
+				(rectangle (start -3.81 -17.78) (end 5.08 10.16) (stroke (width 0.254) (type default)) (fill (type background)))
+				(rectangle (start -3.175 7.3025) (end -1.5875 7.9375) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 4.7625) (end -1.5875 5.3975) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 2.2225) (end -1.5875 2.8575) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -0.3175) (end -1.5875 0.3175) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -2.8575) (end -1.5875 -2.2225) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -5.3975) (end -1.5875 -4.7625) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -7.9375) (end -1.5875 -7.3025) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(rectangle (start -3.175 -10.4775) (end -1.5875 -9.8425) (stroke (width 0.1) (type default)) (fill (type outline)))
+				(pin passive line (at -7.62 7.62 0) (length 5.08) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 5.08 0) (length 5.08) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 2.54 0) (length 5.08) (name "3" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 0 0) (length 5.08) (name "4" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 -2.54 0) (length 5.08) (name "5" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 -5.08 0) (length 5.08) (name "6" (effects (font (size 1.016 1.016)))) (number "6" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 -7.62 0) (length 5.08) (name "7" (effects (font (size 1.016 1.016)))) (number "7" (effects (font (size 1.016 1.016)))))
+				(pin passive line (at -7.62 -10.16 0) (length 5.08) (name "8" (effects (font (size 1.016 1.016)))) (number "8" (effects (font (size 1.016 1.016)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TrailCurrentSymbolLibrary:SN65HVD230DR"
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC" (at 24.13 7.62 0) (effects (font (size 1.27 1.27)) (justify left top)))
+			(property "Value" "SN65HVD230DR" (at 24.13 5.08 0) (effects (font (size 1.27 1.27)) (justify left top)))
+			(property "Footprint" "TrailCurrentFootprints:SN65HVD230DR" (at 24.13 -94.92 0) (effects (font (size 1.27 1.27)) (justify left top) (hide yes)))
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn65hvd230" (at 24.13 -194.92 0) (effects (font (size 1.27 1.27)) (justify left top) (hide yes)))
+			(property "ki_description" "3.3 V CAN Transceiver with Standby Mode" (at 24.13 -294.92 0) (effects (font (size 1.27 1.27)) (justify left top) (hide yes)))
+			(symbol "SN65HVD230DR_0_1"
+				(rectangle (start 5.08 2.54) (end 22.86 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))
+				(pin passive line (at 0 0 0) (length 5.08) (name "D" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -2.54 0) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -5.08 0) (length 5.08) (name "VCC" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -7.62 0) (length 5.08) (name "R" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 27.94 0 180) (length 5.08) (name "VREF" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 27.94 -2.54 180) (length 5.08) (name "CANL" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 27.94 -5.08 180) (length 5.08) (name "CANH" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 27.94 -7.62 180) (length 5.08) (name "RS" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+			)
+		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers (hide yes))
+			(pin_names (offset 0) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Value" "+12V" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "+12V_0_1"
+				(polyline (pts (xy -0.762 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 2.54) (xy 0.762 1.27)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers (hide yes))
+			(pin_names (offset 0) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Value" "+3.3V" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "+3.3V_0_1"
+				(polyline (pts (xy -0.762 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 2.54) (xy 0.762 1.27)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers (hide yes))
+			(pin_names (offset 0) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Value" "+5V" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "+5V_0_1"
+				(polyline (pts (xy -0.762 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 2.54) (xy 0.762 1.27)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers (hide yes))
+			(pin_names (offset 0) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "GND_0_1"
+				(polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none)))
+			)
+			(symbol "GND_1_1"
+				(pin power_in line (at 0 0 270) (length 0) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			)
+			(embedded_fonts no)
+		)
+	)
+
+	(symbol
+		(lib_id "TrailCurrentSymbolLibrary:S8B-XH-SM4-TB")
+		(at 35.56 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc7e9ab8-8c7c-4fd8-8a04-4f2dc457d85b")
+		(property "Reference" "J2"
+			(at 32.56 112.06 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "Trailer_Input"
+			(at 32.56 77.06 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TrailCurrentFootprints:JST_S8B-XH-SM4-TB"
+			(at 35.56 99.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 35.56 99.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "434b21cb-903f-4ea2-91f0-0ce68eca69dd"))
+		(pin "2" (uuid "3d801267-64e6-4fe0-bca0-8f84b9b65480"))
+		(pin "3" (uuid "2feab71d-15b2-4be8-84d8-e505cd9c51a2"))
+		(pin "4" (uuid "79357413-3054-418c-a648-cf5634f45ca0"))
+		(pin "5" (uuid "299372c5-ef67-47c8-af99-8c217f0312b6"))
+		(pin "6" (uuid "2190d90f-d92c-42f3-be14-4a1d79f9e9df"))
+		(pin "7" (uuid "2a38ff99-9fa1-45d2-88c0-815513f3ce19"))
+		(pin "8" (uuid "b424d7c4-7640-4a50-b0ae-ca6af3d5ff64"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:TLP290")
+		(at 101.6 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12878c43-7cc7-403b-b4ab-783ce55d9a0f")
+		(property "Reference" "U3"
+			(at 96.6 55.26 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TLP290"
+			(at 101.6 55.26 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 101.6 48.26 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 101.6 48.26 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "c339e140-6404-4d7a-a025-63ca8d069b72"))
+		(pin "2" (uuid "85799c88-f721-4c70-bc62-15ad5b03079a"))
+		(pin "3" (uuid "d89f284e-6cee-48ba-ba15-8d17703ffe54"))
+		(pin "4" (uuid "326cbe65-3e7e-46ef-99fb-cdb93948536f"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.16999999999999 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0cbbf42b-47fc-4f63-9579-6cc66c16f51d")
+		(property "Reference" "R3"
+			(at 90.16999999999999 47.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "2.2k"
+			(at 90.16999999999999 53.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 90.16999999999999 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 90.16999999999999 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "92c004b6-8b8b-4541-ad1c-58375b49cd35"))
+		(pin "2" (uuid "c1fa1372-554f-46f3-952a-9089c5097af3"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 109.22 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0add1ff9-01bb-4cea-8316-86e37b1a61ee")
+		(property "Reference" "R7"
+			(at 112.22 54.61 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "10k"
+			(at 112.22 56.61 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 109.22 54.61 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 109.22 54.61 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "e6ef734e-33be-4fbd-9615-194d5d4d2093"))
+		(pin "2" (uuid "f98d6808-1899-4fb7-9e21-7fd72066a6a4"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:TLP290")
+		(at 101.6 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e24314d3-0fd3-4ef1-bb3a-eaf2f8cb7142")
+		(property "Reference" "U4"
+			(at 96.6 78.12 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TLP290"
+			(at 101.6 78.12 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 101.6 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 101.6 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "51992177-09ce-4ba1-8f74-b7496e22e74f"))
+		(pin "2" (uuid "f9d0007d-9a22-4189-bca6-a6eebdb225da"))
+		(pin "3" (uuid "12aaa66f-1b77-47fc-acb6-62eb568966a7"))
+		(pin "4" (uuid "37a8e094-1c15-4f06-a3a4-1e8c835d56fa"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.16999999999999 73.66000000000001 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4339cd6-f1df-4cd7-a682-534a35943e17")
+		(property "Reference" "R4"
+			(at 90.16999999999999 70.66000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "2.2k"
+			(at 90.16999999999999 76.66000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 90.16999999999999 73.66000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 90.16999999999999 73.66000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "b8a62774-9654-4321-bb74-c0f624b956dc"))
+		(pin "2" (uuid "4a620565-e402-4d3a-be62-9dc05c0fa0ec"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 109.22 77.47000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6722f073-55a7-441c-9356-dc842ea8cc15")
+		(property "Reference" "R8"
+			(at 112.22 77.47000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "10k"
+			(at 112.22 79.47000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 109.22 77.47000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 109.22 77.47000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "4e4a4adb-4be5-404e-be36-6fd0ff915132"))
+		(pin "2" (uuid "90ce2b5c-157a-4bf0-9ab3-37770aae3805"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:TLP290")
+		(at 101.6 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ae39135-3ef5-4481-9700-4c7333c96bf8")
+		(property "Reference" "U5"
+			(at 96.6 100.98 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TLP290"
+			(at 101.6 100.98 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 101.6 93.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 101.6 93.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "a1c67a04-8c9f-476e-8784-cabea83c3766"))
+		(pin "2" (uuid "97852b0d-725f-44b3-aac0-5416bfb4aa60"))
+		(pin "3" (uuid "88e47c51-0d70-48e9-97c9-768674658476"))
+		(pin "4" (uuid "404799d0-9818-42f4-9c33-862acfe2688e"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.16999999999999 96.52000000000001 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7d26779-34ff-4a37-8317-558bee91372d")
+		(property "Reference" "R5"
+			(at 90.16999999999999 93.52000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "2.2k"
+			(at 90.16999999999999 99.52000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 90.16999999999999 96.52000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 90.16999999999999 96.52000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "c215da9a-71d5-4f5d-a1c0-6618220dd17e"))
+		(pin "2" (uuid "698f1d95-2ac5-432e-b0fd-e5c6d5d83267"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 109.22 100.33000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b126354-9bed-4bfd-9377-afbbff0ca5e3")
+		(property "Reference" "R9"
+			(at 112.22 100.33000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "10k"
+			(at 112.22 102.33000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 109.22 100.33000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 109.22 100.33000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "7c04605c-ce8d-4e32-9ccf-be8bf1a286be"))
+		(pin "2" (uuid "c5e6ebd8-0b3c-4682-8985-48300f051bd8"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:TLP290")
+		(at 101.6 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ecfd0b87-4cd2-4b29-aca8-d95be29bd349")
+		(property "Reference" "U6"
+			(at 96.6 123.84 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TLP290"
+			(at 101.6 123.84 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 101.6 116.84 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 101.6 116.84 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "abdd1fc3-9694-4f48-890e-4335b39507fc"))
+		(pin "2" (uuid "2f4cea52-90ec-496b-b5fb-972d1209af75"))
+		(pin "3" (uuid "79d05396-5697-4802-abd4-c76f5cf35c7b"))
+		(pin "4" (uuid "db9416a9-7642-43da-a888-d7e9533af99b"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.16999999999999 119.38000000000001 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4afd5c62-78dd-4ca8-bc52-015bb1d85d93")
+		(property "Reference" "R6"
+			(at 90.16999999999999 116.38000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "2.2k"
+			(at 90.16999999999999 122.38000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 90.16999999999999 119.38000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 90.16999999999999 119.38000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "65c01119-f10e-436e-9540-3bf0b042a354"))
+		(pin "2" (uuid "a96e3873-b32e-4f55-9ada-70ce5dc4d6cb"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 109.22 123.19000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c49b6dee-58b8-432b-94c4-59baeb2f58e8")
+		(property "Reference" "R10"
+			(at 112.22 123.19000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "10k"
+			(at 112.22 125.19000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 109.22 123.19000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 109.22 123.19000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "d3d6abe9-858f-4ebb-8cb6-8d8e8ebfb622"))
+		(pin "2" (uuid "f1900af2-250c-4162-aff9-1f9c98693a4f"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 73.66 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00f7a962-e7e4-4c8e-8fae-b2056478c995")
+		(property "Reference" "R11"
+			(at 76.66 147.32 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "100k"
+			(at 76.66 149.32 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 73.66 147.32 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 73.66 147.32 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "2a8cc1bf-7dc6-4ccf-8b99-6acea3e03980"))
+		(pin "2" (uuid "f293272e-c34e-4963-a054-16d329364190"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 73.66 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdf89118-450a-446a-a30a-00d6fc5c55f3")
+		(property "Reference" "R13"
+			(at 76.66 157.48 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "27k"
+			(at 76.66 159.48 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 73.66 157.48 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 73.66 157.48 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "41be238d-25ee-4488-bbbc-fdad6f56b5cf"))
+		(pin "2" (uuid "ffbda6c8-d481-42ef-945e-7777a4fea8e0"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 83.82 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a413b3a-c986-4ba5-8bfc-c840dd33ff1a")
+		(property "Reference" "C1"
+			(at 86.82 157.48 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "100nF"
+			(at 86.82 159.48 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 83.82 157.48 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 83.82 157.48 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "3a970f9f-167a-4888-b198-9fd99b630e5e"))
+		(pin "2" (uuid "d17caad2-9ec7-438c-b43c-d9d72c5cfc77"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 73.66 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5373355e-224b-4c53-9868-bf2be557e06b")
+		(property "Reference" "R12"
+			(at 76.66 180.34 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "100k"
+			(at 76.66 182.34 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 73.66 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 73.66 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "5ae470ab-ae9a-457b-bf1a-8b5518b2c861"))
+		(pin "2" (uuid "9d05fc70-8a74-4352-846d-7782e0a498dc"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 73.66 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd32b151-29a9-4dad-b51a-4db18e96955c")
+		(property "Reference" "R14"
+			(at 76.66 190.5 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "27k"
+			(at 76.66 192.5 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 73.66 190.5 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 73.66 190.5 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "b6e388e2-8c44-40db-be9a-b6813aa702a3"))
+		(pin "2" (uuid "3078f290-8250-444d-b1a1-45a9d655a53e"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 83.82 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d707fc16-1aad-48cf-8127-fe595b769e78")
+		(property "Reference" "C2"
+			(at 86.82 190.5 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "100nF"
+			(at 86.82 192.5 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 83.82 190.5 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 83.82 190.5 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "d5bb54ba-a1b6-49a7-9dcd-ee80239f3134"))
+		(pin "2" (uuid "ca0ee2f4-8557-4287-8e53-e87e1f82ac90"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TrailCurrentSymbolLibrary:ESP32-C6-SuperMini")
+		(at 195.58 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "575de896-ba98-41ef-84f8-b13ce958b49a")
+		(property "Reference" "U1"
+			(at 207.58 81.2 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "ESP32-C6-SuperMini"
+			(at 207.58 79.2 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TrailCurrentFootprints:ESP32-C6-SuperMini_SMD"
+			(at 195.58 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 195.58 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "f43ff5f2-2f52-4757-9000-e899b43ab9c0"))
+		(pin "2" (uuid "c702123b-6b2a-4f3d-83ba-6d6b3a3d6db6"))
+		(pin "3" (uuid "ba03813e-42cb-4bca-8fb0-c7dd63b315ab"))
+		(pin "4" (uuid "7755ba74-6d1b-4d0b-b763-929c50f32a0c"))
+		(pin "5" (uuid "30fe7c0b-c72a-4255-837c-b8c59a72d324"))
+		(pin "6" (uuid "3e306b87-f81f-45b8-8c18-87ed811fc7c2"))
+		(pin "7" (uuid "32279408-83fb-44b9-ba61-9e2ecf618f8a"))
+		(pin "8" (uuid "a66920e2-7a5a-476f-a287-c9fc81b5cff8"))
+		(pin "9" (uuid "3bcd42b1-b540-4b4e-9449-242b680c2132"))
+		(pin "10" (uuid "31827e3a-41a6-447e-996d-280e8863debc"))
+		(pin "11" (uuid "a9840e7e-4d73-4b78-be1a-fb21a81f2d91"))
+		(pin "12" (uuid "df449436-5b50-4fa9-bbf3-794cc169ea60"))
+		(pin "13" (uuid "6c83c041-d41e-4d55-8448-2fb4ed3147af"))
+		(pin "14" (uuid "aaf6e461-7048-448d-90db-295265968fb3"))
+		(pin "15" (uuid "495e894b-aa20-44bf-8137-1374abf83c1e"))
+		(pin "16" (uuid "2bc3be35-9b4f-47e0-bfbf-7b69cc9fabab"))
+		(pin "17" (uuid "4b68644f-cbcf-4cc7-9fa2-4ef4d206b05a"))
+		(pin "18" (uuid "52fc9efe-0bbe-41bb-80ad-6cc6429d2e55"))
+		(pin "19" (uuid "42b054e6-2985-44a4-8027-c8982637e686"))
+		(pin "20" (uuid "902a7aa9-a7d0-49df-b35c-9792ac3128f9"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TrailCurrentSymbolLibrary:SN65HVD230DR")
+		(at 274.32 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c46bd8f-f276-4f80-a642-ced84d98a60e")
+		(property "Reference" "IC1"
+			(at 288.32 86.2 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SN65HVD230DR"
+			(at 288.32 84.2 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TrailCurrentFootprints:SN65HVD230DR"
+			(at 274.32 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 274.32 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "f4b094d4-6073-4c6c-ac12-72f94a633695"))
+		(pin "2" (uuid "4aa50ac0-db23-4fa5-b835-6d1c975eea33"))
+		(pin "3" (uuid "23e9efa9-6feb-4596-9c3f-22ce772832a3"))
+		(pin "4" (uuid "dd3e4e1e-3218-4017-9f4d-33b23923de4f"))
+		(pin "5" (uuid "760fa51a-6f28-491e-b6a4-85422a913064"))
+		(pin "6" (uuid "a42fe357-d3f3-4dcf-8e93-dfb3915cae2e"))
+		(pin "7" (uuid "9776f172-d5e9-4988-8590-6032c2e027d6"))
+		(pin "8" (uuid "6fa3b4f2-3e4b-4ec2-9d22-af0e03363469"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 302.26 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8fcc66d-f7d9-4a21-99f3-7b40342de1f6")
+		(property "Reference" "R1"
+			(at 305.26 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "10k"
+			(at 305.26 74.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 302.26 72.39 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 302.26 72.39 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "ea045291-8411-462c-be91-641e3e62d4f7"))
+		(pin "2" (uuid "2805e0cc-4bdf-49dc-877c-4617374b781c"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TrailCurrentSymbolLibrary:S4B-XH-SM4-TB")
+		(at 345.44 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd639271-4a31-4fbf-8f9e-be446f74999e")
+		(property "Reference" "J1"
+			(at 342.44 84.2 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "CAN_Bus"
+			(at 342.44 64.2 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TrailCurrentFootprints:JST_S4B-XH-SM4-TB"
+			(at 345.44 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 345.44 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "9a4f73dc-98a1-43f6-b775-feea0e19c266"))
+		(pin "2" (uuid "fc19272e-a76c-4254-99f1-36bc4362ec1d"))
+		(pin "3" (uuid "5a98acff-1e12-4c37-b92a-a98bfc13b28c"))
+		(pin "4" (uuid "5cfce1a3-f71b-4143-9c1f-0524d16bb3a4"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TrailCurrentSymbolLibrary:Mini560")
+		(at 195.58 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a1b7ab9-740f-49c4-a956-1493c23c0a79")
+		(property "Reference" "U2"
+			(at 207.58 233.6 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "Mini560"
+			(at 207.58 231.6 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TrailCurrentFootprints:Mini560"
+			(at 195.58 228.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 195.58 228.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "552ceb31-d2a7-44ab-829f-731445ba1827"))
+		(pin "2" (uuid "7b023811-eefb-4096-9da9-33acacacf61a"))
+		(pin "3" (uuid "cacf8dfb-50be-4582-9846-a9254bbba5d0"))
+		(pin "4" (uuid "d09e1c63-ab9b-42fd-8195-e43b8bab16d5"))
+		(pin "5" (uuid "7979bc08-9b95-4291-83bc-c926f2feb041"))
+		(pin "6" (uuid "b806e991-411e-4636-a378-7af8d7e56fcb"))
+		(pin "7" (uuid "f3b81117-92ee-44d9-b32d-e3fcd418df9e"))
+		(pin "8" (uuid "a50a7099-bf65-49e7-a516-ee4a0c081fbb"))
+		(pin "9" (uuid "a574bb7e-4eb4-42e4-9229-df893278c880"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 335.28 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b8b4ea0-f7f7-4d40-8011-8e2a5e762aa7")
+		(property "Reference" "H1"
+			(at 335.28 243.83999999999997 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MountingHole"
+			(at 335.28 245.74499999999998 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 335.28 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 335.28 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 345.44 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7dae703e-1eee-42b5-92e2-d4159a3a1fe3")
+		(property "Reference" "H2"
+			(at 345.44 243.83999999999997 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MountingHole"
+			(at 345.44 245.74499999999998 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 345.44 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 345.44 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 355.6 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe7cee6e-7f15-4343-9793-066f63132ae6")
+		(property "Reference" "H3"
+			(at 355.6 243.83999999999997 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MountingHole"
+			(at 355.6 245.74499999999998 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 355.6 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 355.6 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 365.76 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8cef4f8d-e899-47a9-883f-b7b14305c988")
+		(property "Reference" "H4"
+			(at 365.76 243.83999999999997 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MountingHole"
+			(at 365.76 245.74499999999998 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 365.76 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 365.76 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 109.22 58.42) (xy 109.22 50.8)) (stroke (width 0) (type default)) (uuid "b9af318b-2038-4d06-91e8-e5635a9705bf"))
+	(wire (pts (xy 109.22 50.8) (xy 114.3 50.8)) (stroke (width 0) (type default)) (uuid "4ba45afd-ec2c-49cc-b83f-6cbeaeaa3fa5"))
+	(wire (pts (xy 109.22 81.28000000000002) (xy 109.22 73.66000000000001)) (stroke (width 0) (type default)) (uuid "d4de5715-6055-4b62-93e5-386e301382ea"))
+	(wire (pts (xy 109.22 73.66000000000001) (xy 114.3 73.66000000000001)) (stroke (width 0) (type default)) (uuid "034df978-84ba-4e7e-a405-eea3e7c468f3"))
+	(wire (pts (xy 109.22 104.14000000000001) (xy 109.22 96.52000000000001)) (stroke (width 0) (type default)) (uuid "fc294958-e4db-49a9-b87a-cc5ca3b18781"))
+	(wire (pts (xy 109.22 96.52000000000001) (xy 114.3 96.52000000000001)) (stroke (width 0) (type default)) (uuid "ac8deb37-4185-4170-bd29-f91f057272e0"))
+	(wire (pts (xy 109.22 127.00000000000001) (xy 109.22 119.38000000000001)) (stroke (width 0) (type default)) (uuid "7e33bcd1-2acb-48be-bdcc-ad1f3afe2314"))
+	(wire (pts (xy 109.22 119.38000000000001) (xy 114.3 119.38000000000001)) (stroke (width 0) (type default)) (uuid "69926616-04e0-4a68-998a-7dd77c7a7af9"))
+	(wire (pts (xy 73.66 151.13) (xy 73.66 153.67)) (stroke (width 0) (type default)) (uuid "98c13790-66ba-4735-8d23-2f651ca26fdf"))
+	(wire (pts (xy 73.66 151.13) (xy 83.82 153.67)) (stroke (width 0) (type default)) (uuid "2851bb15-15e7-406e-bad2-d8d2ccb42597"))
+	(wire (pts (xy 73.66 151.13) (xy 78.74 151.13)) (stroke (width 0) (type default)) (uuid "03eb4bf4-1677-435d-80af-19b47bac9e3d"))
+	(wire (pts (xy 73.66 184.15) (xy 73.66 186.69)) (stroke (width 0) (type default)) (uuid "4a2c0bb0-902f-4b20-942b-745388b0f641"))
+	(wire (pts (xy 73.66 184.15) (xy 83.82 186.69)) (stroke (width 0) (type default)) (uuid "e1a72516-e4ef-4b0b-ae89-d3192a314289"))
+	(wire (pts (xy 73.66 184.15) (xy 78.74 184.15)) (stroke (width 0) (type default)) (uuid "c97b1484-9afa-41dc-9cd5-7117382e1c5c"))
+	(wire (pts (xy 302.26 68.58) (xy 302.26 68.58)) (stroke (width 0) (type default)) (uuid "577274cd-532c-471a-9178-55421513a2d4"))
+	(global_label "BRAKE_12V"
+		(shape bidirectional)
+		(at 27.94 104.14 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "19941bf4-b799-4ea1-b658-7e7cc0904b60")
+		(property "Intersheets" ""
+			(at 27.94 104.14 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "RUNNING_12V"
+		(shape bidirectional)
+		(at 27.94 101.60000000000001 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "60043af9-5f24-4b94-9d5c-9987dddf8eaf")
+		(property "Intersheets" ""
+			(at 27.94 101.60000000000001 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "AUX_12V_IN"
+		(shape bidirectional)
+		(at 27.94 99.06 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "e2321889-7237-45fe-848d-a72b1a5dc523")
+		(property "Intersheets" ""
+			(at 27.94 99.06 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "R_TURN_12V"
+		(shape bidirectional)
+		(at 27.94 96.52000000000001 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "94c7601f-be63-4814-ae3a-2f64933cd34b")
+		(property "Intersheets" ""
+			(at 27.94 96.52000000000001 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "BACKUP_12V"
+		(shape bidirectional)
+		(at 27.94 93.98 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "0fda878a-d9b5-4ec2-93a3-eec78115f25f")
+		(property "Intersheets" ""
+			(at 27.94 93.98 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "L_TURN_12V"
+		(shape bidirectional)
+		(at 27.94 91.44000000000001 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "c13f699d-2b78-4282-a51d-35899039f997")
+		(property "Intersheets" ""
+			(at 27.94 91.44000000000001 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "L_TURN_12V"
+		(shape bidirectional)
+		(at 86.35999999999999 50.8 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "fb3a4737-f84e-449b-9d61-3403a20324e9")
+		(property "Intersheets" ""
+			(at 86.35999999999999 50.8 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "L_TURN"
+		(shape bidirectional)
+		(at 114.3 50.8 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "37d51995-e4c4-4246-9240-c8c75ff604b8")
+		(property "Intersheets" ""
+			(at 114.3 50.8 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "R_TURN_12V"
+		(shape bidirectional)
+		(at 86.35999999999999 73.66000000000001 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "c30ca15c-00d7-42ab-a360-8a9135035bbe")
+		(property "Intersheets" ""
+			(at 86.35999999999999 73.66000000000001 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "R_TURN"
+		(shape bidirectional)
+		(at 114.3 73.66000000000001 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "615ea85c-c25f-46f2-86ba-664126a83395")
+		(property "Intersheets" ""
+			(at 114.3 73.66000000000001 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "RUNNING_12V"
+		(shape bidirectional)
+		(at 86.35999999999999 96.52000000000001 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "05b1afbb-8c5b-4be7-9051-c04f528bc4a6")
+		(property "Intersheets" ""
+			(at 86.35999999999999 96.52000000000001 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "RUNNING"
+		(shape bidirectional)
+		(at 114.3 96.52000000000001 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "93b71e62-6b83-4285-8fdb-bc3cd664c73f")
+		(property "Intersheets" ""
+			(at 114.3 96.52000000000001 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "BACKUP_12V"
+		(shape bidirectional)
+		(at 86.35999999999999 119.38000000000001 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "16d8c25d-a506-46f7-8c4c-56f537acf982")
+		(property "Intersheets" ""
+			(at 86.35999999999999 119.38000000000001 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "BACKUP"
+		(shape bidirectional)
+		(at 114.3 119.38000000000001 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "b93cbf4f-a655-4b63-a57d-959f3383ea6b")
+		(property "Intersheets" ""
+			(at 114.3 119.38000000000001 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "AUX_12V_IN"
+		(shape bidirectional)
+		(at 73.66 143.51 90)
+		(effects (font (size 1.27 1.27)))
+		(uuid "7db54249-2393-43dc-8666-4814ad9adf72")
+		(property "Intersheets" ""
+			(at 73.66 143.51 90)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "AUX_12V_SENSE"
+		(shape bidirectional)
+		(at 78.74 151.13 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "a98efe27-2a41-4d57-9bf9-b5d1067969e3")
+		(property "Intersheets" ""
+			(at 78.74 151.13 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "BRAKE_12V"
+		(shape bidirectional)
+		(at 73.66 176.53 90)
+		(effects (font (size 1.27 1.27)))
+		(uuid "0ea872e4-b3ee-44fc-9b2e-ba38f9cb2a4d")
+		(property "Intersheets" ""
+			(at 73.66 176.53 90)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "BRAKE_SENSE"
+		(shape bidirectional)
+		(at 78.74 184.15 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "3b31c3bd-62c0-4293-9cc1-f54d990dff5e")
+		(property "Intersheets" ""
+			(at 78.74 184.15 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "RUNNING"
+		(shape bidirectional)
+		(at 195.58 71.12 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "966f07f6-123d-4c27-82a6-b2799699af79")
+		(property "Intersheets" ""
+			(at 195.58 71.12 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "BACKUP"
+		(shape bidirectional)
+		(at 195.58 68.58 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "4285642a-397f-45c6-b999-ec8e173fa627")
+		(property "Intersheets" ""
+			(at 195.58 68.58 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "AUX_12V_SENSE"
+		(shape bidirectional)
+		(at 195.58 66.04 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "7db86a26-dc71-4734-82d8-086ab7f5e236")
+		(property "Intersheets" ""
+			(at 195.58 66.04 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "L_TURN"
+		(shape bidirectional)
+		(at 195.58 63.5 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "37bf087a-1f31-4c85-ac97-53eb4183929c")
+		(property "Intersheets" ""
+			(at 195.58 63.5 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "R_TURN"
+		(shape bidirectional)
+		(at 195.58 60.96 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "d4415d72-377d-4ff3-87ff-70dbd6fbfd9c")
+		(property "Intersheets" ""
+			(at 195.58 60.96 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "BRAKE_SENSE"
+		(shape bidirectional)
+		(at 195.58 58.42 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "42560446-66ee-45ca-9334-fb0d66193a74")
+		(property "Intersheets" ""
+			(at 195.58 58.42 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CAN_RX"
+		(shape bidirectional)
+		(at 220.98000000000002 60.96 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "d7858a94-0722-4caa-bb8b-52e61d38cd37")
+		(property "Intersheets" ""
+			(at 220.98000000000002 60.96 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CAN_TX"
+		(shape bidirectional)
+		(at 220.98000000000002 58.42 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "c4958b0b-3aac-491a-8c8f-10387b9507bf")
+		(property "Intersheets" ""
+			(at 220.98000000000002 58.42 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CAN_TX"
+		(shape bidirectional)
+		(at 274.32 76.2 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "3cf3b26f-3544-40b1-8d6f-3ba7aa786543")
+		(property "Intersheets" ""
+			(at 274.32 76.2 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CAN_RX"
+		(shape bidirectional)
+		(at 274.32 68.58 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "89efec99-3596-4f51-9b09-57daf9d73b63")
+		(property "Intersheets" ""
+			(at 274.32 68.58 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CANL"
+		(shape bidirectional)
+		(at 302.26 73.66 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "a46eb33d-55b8-4db3-8a8f-081756870110")
+		(property "Intersheets" ""
+			(at 302.26 73.66 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CANH"
+		(shape bidirectional)
+		(at 302.26 71.12 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "6c53dc7d-c369-498f-8bad-8de1c2ff0b2c")
+		(property "Intersheets" ""
+			(at 302.26 71.12 0)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CANL"
+		(shape bidirectional)
+		(at 337.82 76.2 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "d925bdcb-6412-43b8-b20c-20bf5b6c2063")
+		(property "Intersheets" ""
+			(at 337.82 76.2 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(global_label "CANH"
+		(shape bidirectional)
+		(at 337.82 73.66000000000001 180)
+		(effects (font (size 1.27 1.27)))
+		(uuid "4a50435c-c1c0-4e63-9f36-b94f7fd08738")
+		(property "Intersheets" ""
+			(at 337.82 73.66000000000001 180)
+			(effects (font (size 1.016 1.016)) (hide yes))
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7fecdfa-9462-4729-86fb-ee820684975f")
+		(property "Reference" "#PWR001"
+			(at 27.94 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 27.94 104.14 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 27.94 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 27.94 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "9c5a7e11-30e6-4dbc-a8b8-93a88bb97067"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "082929c5-e693-4dff-9dbc-7c6a21dbf0c3")
+		(property "Reference" "#PWR002"
+			(at 27.94 85.09 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 27.94 86.36 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 27.94 88.9 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 27.94 88.9 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "a13d068e-9e53-4e1d-98f6-4cd17a0d5777"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.97999999999999 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df3298de-6662-4819-9cc6-6639cc9d1e59")
+		(property "Reference" "#PWR003"
+			(at 93.97999999999999 41.91 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 93.97999999999999 43.18 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 93.97999999999999 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 93.97999999999999 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "94224391-c0a5-47f2-ab94-aa531518c9c8"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "505d1250-c237-4088-a1a9-ffb6cc06cabd")
+		(property "Reference" "#PWR004"
+			(at 109.22 41.91 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 109.22 43.18 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "8aabb361-11a4-4c04-8d05-9179cf9aa191"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95e7e408-6552-4755-a813-6e1fb935abb3")
+		(property "Reference" "#PWR005"
+			(at 109.22 54.61 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 53.339999999999996 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "ce06f86a-97b1-4469-9803-7ae878fd70c8"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.97999999999999 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7eb57015-c0fb-4ad0-937d-d9dfdf1fbb05")
+		(property "Reference" "#PWR006"
+			(at 93.97999999999999 64.77 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 93.97999999999999 66.03999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 93.97999999999999 68.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 93.97999999999999 68.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "f376af76-ac9e-4489-9510-945dbb21393e"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11174cdb-10de-4950-bf7d-6660d86addd7")
+		(property "Reference" "#PWR007"
+			(at 109.22 64.77 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 109.22 66.03999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 68.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 68.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "9b106594-4876-46aa-ae63-a8414b1126f9"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 73.66000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e12ff958-aac3-4f05-acbd-e73c72e5ac7f")
+		(property "Reference" "#PWR008"
+			(at 109.22 77.47000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 76.20000000000002 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 73.66000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 73.66000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "b15ad3cf-b9a0-4d67-98b3-ca6ca4cbdb8a"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.97999999999999 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9062033-82b5-4f29-ad0a-1455260e081a")
+		(property "Reference" "#PWR009"
+			(at 93.97999999999999 87.63 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 93.97999999999999 88.89999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 93.97999999999999 91.44 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 93.97999999999999 91.44 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "6035e2df-145b-4bf3-af79-242c8eb77ee0"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f4bfa77-bba8-41cd-8678-fffa34eac74c")
+		(property "Reference" "#PWR010"
+			(at 109.22 87.63 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 109.22 88.89999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 91.44 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 91.44 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "86cb0f69-6e1c-4082-bc2c-30ef7fabf77c"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 96.52000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a15ef643-de26-4173-8ab8-df644ad5e242")
+		(property "Reference" "#PWR011"
+			(at 109.22 100.33000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 99.06000000000002 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 96.52000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 96.52000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "0341ebcb-82dc-4292-834a-8d3b6f768a50"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.97999999999999 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d0f8219-d2a9-4f61-9585-e918bc0dc188")
+		(property "Reference" "#PWR012"
+			(at 93.97999999999999 110.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 93.97999999999999 111.75999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 93.97999999999999 114.3 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 93.97999999999999 114.3 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "9b349514-f5ad-455e-be3f-233b43d7495f"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3cd9d6ff-41c9-44b4-96a0-6cffb446377d")
+		(property "Reference" "#PWR013"
+			(at 109.22 110.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 109.22 111.75999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 114.3 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 114.3 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "5aa503d4-f58e-421f-b01c-b078b0d15be4"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 119.38000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ae7a6f4-3636-44c9-b454-c4b9e81589df")
+		(property "Reference" "#PWR014"
+			(at 109.22 123.19000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 121.92000000000002 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 109.22 119.38000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 109.22 119.38000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "1b63390a-3ca6-4152-8f38-d2cea7d9a21f"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 73.66 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df1ee70b-b3df-4484-a54b-8d882ea02538")
+		(property "Reference" "#PWR015"
+			(at 73.66 157.48 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 73.66 158.75 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 73.66 161.29 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 73.66 161.29 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "e7dd9899-a77c-49b7-849b-a05c1ed57577"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c2cf3bd3-3c4b-4abb-9c4a-fbbd4f91cc9c")
+		(property "Reference" "#PWR016"
+			(at 83.82 157.48 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 83.82 158.75 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 83.82 161.29 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 83.82 161.29 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "6b18e68b-4f25-4654-80a3-5dd52f2ec43c"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 73.66 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4d31095-2823-46e2-9b80-40f872f59867")
+		(property "Reference" "#PWR017"
+			(at 73.66 190.5 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 73.66 191.77 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 73.66 194.31 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 73.66 194.31 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "0d021fdf-c19b-452f-bd36-1c0bb3cfa53b"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bae94337-1671-4a73-8b7a-9ebfa89bc709")
+		(property "Reference" "#PWR018"
+			(at 83.82 190.5 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 83.82 191.77 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 83.82 194.31 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 83.82 194.31 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "fdb9cb7f-daf8-4251-960f-d66c9b403f64"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 220.98000000000002 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6b38928-a5a8-4694-be72-2a0b2a4eb904")
+		(property "Reference" "#PWR019"
+			(at 220.98000000000002 80.01 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+5V"
+			(at 220.98000000000002 78.74000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 220.98000000000002 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 220.98000000000002 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "5e96f081-6b52-4033-ad49-46a90b1a72c2"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98000000000002 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98399d61-dae4-426a-8570-f4abaaece527")
+		(property "Reference" "#PWR020"
+			(at 220.98000000000002 69.85 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 220.98000000000002 71.11999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 220.98000000000002 73.66 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 220.98000000000002 73.66 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "d2cc539c-7f32-4149-a51a-499bb7fee809"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 220.98000000000002 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26373890-8dd4-405a-826d-cf4417079298")
+		(property "Reference" "#PWR021"
+			(at 220.98000000000002 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3.3V"
+			(at 220.98000000000002 73.66000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 220.98000000000002 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 220.98000000000002 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "79899d5d-4a15-4587-bf11-beb273833b14"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 274.32 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de52a75b-1503-4014-9391-d32854621734")
+		(property "Reference" "#PWR022"
+			(at 274.32 69.85 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 274.32 71.11999999999999 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 274.32 73.66 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 274.32 73.66 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "4a141e2e-a610-46a3-9038-aa00bc14ae3a"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 274.32 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bc90b66-3ede-4cbb-97f6-93d2b26d3ed6")
+		(property "Reference" "#PWR023"
+			(at 274.32 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3.3V"
+			(at 274.32 73.66000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 274.32 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 274.32 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "0a1390d1-afba-40ac-961b-95ea44f625e9"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 302.26 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d45ff8e7-90bf-4121-a971-804db674bc40")
+		(property "Reference" "#PWR024"
+			(at 302.26 72.39 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 302.26 73.66 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 302.26 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 302.26 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "93ff9bc3-09e0-4baf-980d-d1df71f09524"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 337.82 78.74000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fe39c16-766c-4437-b6ce-3bb10557ae8f")
+		(property "Reference" "#PWR025"
+			(at 337.82 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 337.82 76.2 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 337.82 78.74000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 337.82 78.74000000000001 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "1047c551-e081-42e7-8bb9-7afe0daf4b68"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 337.82 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0885be00-2cdb-4b8e-87f6-b62f44073c45")
+		(property "Reference" "#PWR026"
+			(at 337.82 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+12V"
+			(at 337.82 73.66000000000001 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 337.82 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 337.82 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "c1d73662-efe3-4a84-ae77-b6554d9bb631"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 195.58 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe59d9a9-653b-4118-a3e9-46c052878c99")
+		(property "Reference" "#PWR027"
+			(at 195.58 232.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+12V"
+			(at 195.58 231.14 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 195.58 228.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 195.58 228.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "c2efef96-e22d-4e30-ad6f-31ceff904bd8"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 195.58 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1642acbe-182e-43be-a666-ffe79cbb201f")
+		(property "Reference" "#PWR028"
+			(at 195.58 229.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+12V"
+			(at 195.58 228.6 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 195.58 226.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 195.58 226.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "963dc5c3-f7ee-4aea-8e09-01290aec36ad"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 223.51999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e24a838-f327-424f-9ce2-2d3f69342bfa")
+		(property "Reference" "#PWR029"
+			(at 195.58 219.70999999999998 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 195.58 220.98 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 195.58 223.51999999999998 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 195.58 223.51999999999998 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "3eb64154-6c05-4cf1-8439-662866259aa2"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 220.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f367959-ad60-4651-966a-5cd5f61eff66")
+		(property "Reference" "#PWR030"
+			(at 195.58 217.17 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 195.58 218.44 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 195.58 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 195.58 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "625c3e91-68f0-4b94-92de-d4f66ce8b9cd"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98000000000002 220.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f8147ee-a150-49e6-87b0-a23fc3bd4535")
+		(property "Reference" "#PWR031"
+			(at 220.98000000000002 217.17 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 220.98000000000002 218.44 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 220.98000000000002 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 220.98000000000002 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "b73d483d-aabc-4f72-9857-cfda809b1db2"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98000000000002 223.51999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67d3f750-df52-46a8-aa24-05b26ddaca17")
+		(property "Reference" "#PWR032"
+			(at 220.98000000000002 219.70999999999998 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 220.98000000000002 220.98 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 220.98000000000002 223.51999999999998 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 220.98000000000002 223.51999999999998 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "61dac0da-3396-4e09-bbde-2e65584891fc"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 220.98000000000002 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4e66725-8e32-493d-b22a-13a738b243fa")
+		(property "Reference" "#PWR033"
+			(at 220.98000000000002 229.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+5V"
+			(at 220.98000000000002 228.6 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 220.98000000000002 226.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 220.98000000000002 226.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "fd6a7c2e-3c94-4c95-b8bb-e439746ea59c"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 220.98000000000002 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd0a2a46-5fc8-4c3e-bbb4-62faad19e9ef")
+		(property "Reference" "#PWR034"
+			(at 220.98000000000002 232.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+5V"
+			(at 220.98000000000002 231.14 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 220.98000000000002 228.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 220.98000000000002 228.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "a4ff509c-223a-4aee-ac39-34a9efe457d3"))
+		(instances
+			(project "TrailCurrentSevenPinTrailerConnector"
+				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect (at 195.58 76.2) (uuid "a351b565-b239-48b2-9f7b-3ff5dd191994"))
+	(no_connect (at 195.58 73.66) (uuid "7ac37f56-86a9-4ee8-9b47-96a887234a20"))
+	(no_connect (at 195.58 55.88) (uuid "0159a200-8b9f-4834-96ee-ff4bc3598e54"))
+	(no_connect (at 195.58 53.34) (uuid "6dea0195-07ef-4492-bd92-68ffeca504b4"))
+	(no_connect (at 220.98000000000002 68.58) (uuid "20f3622d-1a3c-4ca8-85fe-8215dda6183b"))
+	(no_connect (at 220.98000000000002 66.04) (uuid "342772c1-2f43-444e-94f8-67de587ee2f5"))
+	(no_connect (at 220.98000000000002 63.5) (uuid "7115a442-d022-422b-a44c-d6e789d51f31"))
+	(no_connect (at 220.98000000000002 55.88) (uuid "363ab8cf-fd00-401f-b6cd-c525e58e6b00"))
+	(no_connect (at 220.98000000000002 53.34) (uuid "718768cb-41b8-44d2-aace-470dcb3a465d"))
+	(no_connect (at 302.26 76.2) (uuid "9dafd570-9cfa-4959-b875-5747ef5259f0"))
+	(no_connect (at 208.28 203.2) (uuid "ec5a90d4-977f-48de-b63e-90ada27bf28a"))
+	(junction (at 109.22 50.8) (diameter 0) (color 0 0 0 0) (uuid "618eda30-6255-4526-84d8-7803d76f5b7b"))
+	(junction (at 109.22 73.66000000000001) (diameter 0) (color 0 0 0 0) (uuid "11479042-4454-4f60-b730-dde7397b0d57"))
+	(junction (at 109.22 96.52000000000001) (diameter 0) (color 0 0 0 0) (uuid "29acbf60-299d-4439-9d9f-5c7039929b94"))
+	(junction (at 109.22 119.38000000000001) (diameter 0) (color 0 0 0 0) (uuid "c6860f75-2541-4c7c-8926-f3b6708f6d97"))
+	(junction (at 73.66 151.13) (diameter 0) (color 0 0 0 0) (uuid "bd301994-f760-47be-865b-9952eec71638"))
+	(junction (at 73.66 184.15) (diameter 0) (color 0 0 0 0) (uuid "7175ca6f-8169-4463-a373-6395098a596c"))
+	(text "TrailCurrent Seven Pin Trailer Connector Monitor"
+		(exclude_from_sim no)
+		(at 25.4 20.32 0)
+		(effects (font (size 3.81 3.81)) (justify left))
+		(uuid "9ca4998a-7456-421e-9d4d-921aa57238fa")
+	)
+	(text "Signal Conditioning - Optocouplers (12V → 3.3V)"
+		(exclude_from_sim no)
+		(at 60.96 33.02 0)
+		(effects (font (size 2.0 2.0)) (justify left))
+		(uuid "413cdd11-4e88-4df2-90fc-9f64fc0c94a1")
+	)
+	(text "Voltage Dividers (12V → 3.0V ADC)"
+		(exclude_from_sim no)
+		(at 55.88 134.62 0)
+		(effects (font (size 2.0 2.0)) (justify left))
+		(uuid "d872d72d-0ae6-4a9d-908c-62277af0281a")
+	)
+	(text "MCU"
+		(exclude_from_sim no)
+		(at 200.66 66.04 0)
+		(effects (font (size 2.0 2.0)) (justify left))
+		(uuid "cf191677-765f-46eb-a3e5-ba3a02b2c4e9")
+	)
+	(text "CAN Bus Interface"
+		(exclude_from_sim no)
+		(at 269.24 63.5 0)
+		(effects (font (size 2.0 2.0)) (justify left))
+		(uuid "1cf5816f-2f4d-44f6-8ddb-19de41092795")
+	)
+	(text "Power Supply (12V → 5V)"
+		(exclude_from_sim no)
+		(at 190.5 218.44 0)
+		(effects (font (size 2.0 2.0)) (justify left))
+		(uuid "92c7f3d6-9419-45c1-96ec-297bdf99889c")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

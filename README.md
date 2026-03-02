@@ -4,7 +4,7 @@ Firmware module that monitors the state of a 7-pin trailer connection including 
 
 ## Overview
 
-- **Microcontroller:** ESP32-C6
+- **Microcontroller:** [Waveshare ESP32-C6-Zero](https://www.waveshare.com/esp32-c6-zero.htm?aff_id=Trailcurrent) — selected for its extensive documentation, small footprint, pre-soldered programming pins, castellations for direct PCB integration, and low power consumption
 - **Function:** 7-pin trailer connector monitoring with CAN bus reporting
 - **Key Features:**
   - Monitors trailer voltage, turn signals, brakes, and running lights
