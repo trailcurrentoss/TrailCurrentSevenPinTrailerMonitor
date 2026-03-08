@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate KiCAD 9.0 schematic for TrailCurrent Seven Pin Trailer Connector Monitor.
+"""Generate KiCAD 9.0 schematic for TrailCurrent Aftline.
 
 Usage: python3 generate_schematic.py
-Outputs: TrailCurrentSevenPinTrailerConnector/TrailCurrentSevenPinTrailerConnector.kicad_sch
+Outputs: TrailCurrentAftline/TrailCurrentAftline.kicad_sch
 
 Circuit Design:
 - ESP32-C6 SuperMini MCU
@@ -18,7 +18,7 @@ import uuid
 import os
 
 ROOT_UUID = "86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
-PROJECT_NAME = "TrailCurrentSevenPinTrailerConnector"
+PROJECT_NAME = "TrailCurrentAftline"
 
 def uid():
     return str(uuid.uuid4())
@@ -1053,7 +1053,7 @@ def generate_schematic():
 
     # ========== Text annotations ==========
     texts = []
-    texts.append(make_text("TrailCurrent Seven Pin Trailer Connector Monitor", 25.4, 20.32, 3.81))
+    texts.append(make_text("TrailCurrent Aftline", 25.4, 20.32, 3.81))
     texts.append(make_text("Signal Conditioning - Optocouplers (12V → 3.3V)", 60.96, 33.02, 2.0))
     texts.append(make_text("Voltage Dividers (12V → 3.0V ADC)", 55.88, 134.62, 2.0))
     texts.append(make_text("MCU", 200.66, 66.04, 2.0))
@@ -1099,9 +1099,9 @@ def generate_schematic():
 if __name__ == "__main__":
     schematic = generate_schematic()
     output_dir = os.path.join(os.path.dirname(__file__),
-                              "TrailCurrentSevenPinTrailerConnector")
+                              "TrailCurrentAftline")
     output_path = os.path.join(output_dir,
-                               "TrailCurrentSevenPinTrailerConnector.kicad_sch")
+                               "TrailCurrentAftline.kicad_sch")
     with open(output_path, 'w') as f:
         f.write(schematic)
     print(f"Schematic written to: {output_path}")

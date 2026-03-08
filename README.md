@@ -1,11 +1,11 @@
-# TrailCurrent Seven Pin Trailer Monitor
+# TrailCurrent Aftline
 
 Firmware module that monitors the state of a 7-pin trailer connection including voltage, turn signals, brakes, and running lights, reporting status over a CAN bus interface. Part of the [TrailCurrent](https://trailcurrent.com) open-source vehicle platform.
 
 ## Overview
 
 - **Microcontroller:** [Waveshare ESP32-C6-Zero](https://www.waveshare.com/esp32-c6-zero.htm?aff_id=Trailcurrent) — selected for its extensive documentation, small footprint, pre-soldered programming pins, castellations for direct PCB integration, and low power consumption
-- **Function:** 7-pin trailer connector monitoring with CAN bus reporting
+- **Function:** Trailer connector monitoring with CAN bus reporting
 - **Key Features:**
   - Monitors trailer voltage, turn signals, brakes, and running lights
   - CAN bus communication at 500 kbps

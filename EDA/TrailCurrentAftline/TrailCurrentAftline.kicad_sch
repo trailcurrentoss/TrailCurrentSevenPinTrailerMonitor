@@ -362,7 +362,7 @@
 		(pin "7" (uuid "2a38ff99-9fa1-45d2-88c0-815513f3ce19"))
 		(pin "8" (uuid "b424d7c4-7640-4a50-b0ae-ca6af3d5ff64"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "J2")
 					(unit 1)
@@ -400,7 +400,7 @@
 		(pin "3" (uuid "d89f284e-6cee-48ba-ba15-8d17703ffe54"))
 		(pin "4" (uuid "326cbe65-3e7e-46ef-99fb-cdb93948536f"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "U3")
 					(unit 1)
@@ -436,7 +436,7 @@
 		(pin "1" (uuid "92c004b6-8b8b-4541-ad1c-58375b49cd35"))
 		(pin "2" (uuid "c1fa1372-554f-46f3-952a-9089c5097af3"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R3")
 					(unit 1)
@@ -472,7 +472,7 @@
 		(pin "1" (uuid "e6ef734e-33be-4fbd-9615-194d5d4d2093"))
 		(pin "2" (uuid "f98d6808-1899-4fb7-9e21-7fd72066a6a4"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R7")
 					(unit 1)
@@ -510,7 +510,7 @@
 		(pin "3" (uuid "12aaa66f-1b77-47fc-acb6-62eb568966a7"))
 		(pin "4" (uuid "37a8e094-1c15-4f06-a3a4-1e8c835d56fa"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "U4")
 					(unit 1)
@@ -546,7 +546,7 @@
 		(pin "1" (uuid "b8a62774-9654-4321-bb74-c0f624b956dc"))
 		(pin "2" (uuid "4a620565-e402-4d3a-be62-9dc05c0fa0ec"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R4")
 					(unit 1)
@@ -582,7 +582,7 @@
 		(pin "1" (uuid "4e4a4adb-4be5-404e-be36-6fd0ff915132"))
 		(pin "2" (uuid "90ce2b5c-157a-4bf0-9ab3-37770aae3805"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R8")
 					(unit 1)
@@ -620,7 +620,7 @@
 		(pin "3" (uuid "88e47c51-0d70-48e9-97c9-768674658476"))
 		(pin "4" (uuid "404799d0-9818-42f4-9c33-862acfe2688e"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "U5")
 					(unit 1)
@@ -656,7 +656,7 @@
 		(pin "1" (uuid "c215da9a-71d5-4f5d-a1c0-6618220dd17e"))
 		(pin "2" (uuid "698f1d95-2ac5-432e-b0fd-e5c6d5d83267"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R5")
 					(unit 1)
@@ -692,7 +692,7 @@
 		(pin "1" (uuid "7c04605c-ce8d-4e32-9ccf-be8bf1a286be"))
 		(pin "2" (uuid "c5e6ebd8-0b3c-4682-8985-48300f051bd8"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R9")
 					(unit 1)
@@ -730,7 +730,7 @@
 		(pin "3" (uuid "79d05396-5697-4802-abd4-c76f5cf35c7b"))
 		(pin "4" (uuid "db9416a9-7642-43da-a888-d7e9533af99b"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "U6")
 					(unit 1)
@@ -766,7 +766,7 @@
 		(pin "1" (uuid "65c01119-f10e-436e-9540-3bf0b042a354"))
 		(pin "2" (uuid "a96e3873-b32e-4f55-9ada-70ce5dc4d6cb"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R6")
 					(unit 1)
@@ -802,7 +802,7 @@
 		(pin "1" (uuid "d3d6abe9-858f-4ebb-8cb6-8d8e8ebfb622"))
 		(pin "2" (uuid "f1900af2-250c-4162-aff9-1f9c98693a4f"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R10")
 					(unit 1)
@@ -838,7 +838,7 @@
 		(pin "1" (uuid "2a8cc1bf-7dc6-4ccf-8b99-6acea3e03980"))
 		(pin "2" (uuid "f293272e-c34e-4963-a054-16d329364190"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R11")
 					(unit 1)
@@ -874,7 +874,7 @@
 		(pin "1" (uuid "41be238d-25ee-4488-bbbc-fdad6f56b5cf"))
 		(pin "2" (uuid "ffbda6c8-d481-42ef-945e-7777a4fea8e0"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R13")
 					(unit 1)
@@ -910,7 +910,7 @@
 		(pin "1" (uuid "3a970f9f-167a-4888-b198-9fd99b630e5e"))
 		(pin "2" (uuid "d17caad2-9ec7-438c-b43c-d9d72c5cfc77"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "C1")
 					(unit 1)
@@ -946,7 +946,7 @@
 		(pin "1" (uuid "5ae470ab-ae9a-457b-bf1a-8b5518b2c861"))
 		(pin "2" (uuid "9d05fc70-8a74-4352-846d-7782e0a498dc"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R12")
 					(unit 1)
@@ -982,7 +982,7 @@
 		(pin "1" (uuid "b6e388e2-8c44-40db-be9a-b6813aa702a3"))
 		(pin "2" (uuid "3078f290-8250-444d-b1a1-45a9d655a53e"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R14")
 					(unit 1)
@@ -1018,7 +1018,7 @@
 		(pin "1" (uuid "d5bb54ba-a1b6-49a7-9dcd-ee80239f3134"))
 		(pin "2" (uuid "ca0ee2f4-8557-4287-8e53-e87e1f82ac90"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "C2")
 					(unit 1)
@@ -1072,7 +1072,7 @@
 		(pin "19" (uuid "42b054e6-2985-44a4-8027-c8982637e686"))
 		(pin "20" (uuid "902a7aa9-a7d0-49df-b35c-9792ac3128f9"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "U1")
 					(unit 1)
@@ -1114,7 +1114,7 @@
 		(pin "7" (uuid "9776f172-d5e9-4988-8590-6032c2e027d6"))
 		(pin "8" (uuid "6fa3b4f2-3e4b-4ec2-9d22-af0e03363469"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "IC1")
 					(unit 1)
@@ -1150,7 +1150,7 @@
 		(pin "1" (uuid "ea045291-8411-462c-be91-641e3e62d4f7"))
 		(pin "2" (uuid "2805e0cc-4bdf-49dc-877c-4617374b781c"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "R1")
 					(unit 1)
@@ -1188,7 +1188,7 @@
 		(pin "3" (uuid "5a98acff-1e12-4c37-b92a-a98bfc13b28c"))
 		(pin "4" (uuid "5cfce1a3-f71b-4143-9c1f-0524d16bb3a4"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "J1")
 					(unit 1)
@@ -1231,7 +1231,7 @@
 		(pin "8" (uuid "a50a7099-bf65-49e7-a516-ee4a0c081fbb"))
 		(pin "9" (uuid "a574bb7e-4eb4-42e4-9229-df893278c880"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "U2")
 					(unit 1)
@@ -1265,7 +1265,7 @@
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "H1")
 					(unit 1)
@@ -1299,7 +1299,7 @@
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "H2")
 					(unit 1)
@@ -1333,7 +1333,7 @@
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "H3")
 					(unit 1)
@@ -1367,7 +1367,7 @@
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "H4")
 					(unit 1)
@@ -1737,7 +1737,7 @@
 		)
 		(pin "1" (uuid "9c5a7e11-30e6-4dbc-a8b8-93a88bb97067"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR001")
 					(unit 1)
@@ -1772,7 +1772,7 @@
 		)
 		(pin "1" (uuid "a13d068e-9e53-4e1d-98f6-4cd17a0d5777"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR002")
 					(unit 1)
@@ -1807,7 +1807,7 @@
 		)
 		(pin "1" (uuid "94224391-c0a5-47f2-ab94-aa531518c9c8"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR003")
 					(unit 1)
@@ -1842,7 +1842,7 @@
 		)
 		(pin "1" (uuid "8aabb361-11a4-4c04-8d05-9179cf9aa191"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR004")
 					(unit 1)
@@ -1877,7 +1877,7 @@
 		)
 		(pin "1" (uuid "ce06f86a-97b1-4469-9803-7ae878fd70c8"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR005")
 					(unit 1)
@@ -1912,7 +1912,7 @@
 		)
 		(pin "1" (uuid "f376af76-ac9e-4489-9510-945dbb21393e"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR006")
 					(unit 1)
@@ -1947,7 +1947,7 @@
 		)
 		(pin "1" (uuid "9b106594-4876-46aa-ae63-a8414b1126f9"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR007")
 					(unit 1)
@@ -1982,7 +1982,7 @@
 		)
 		(pin "1" (uuid "b15ad3cf-b9a0-4d67-98b3-ca6ca4cbdb8a"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR008")
 					(unit 1)
@@ -2017,7 +2017,7 @@
 		)
 		(pin "1" (uuid "6035e2df-145b-4bf3-af79-242c8eb77ee0"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR009")
 					(unit 1)
@@ -2052,7 +2052,7 @@
 		)
 		(pin "1" (uuid "86cb0f69-6e1c-4082-bc2c-30ef7fabf77c"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR010")
 					(unit 1)
@@ -2087,7 +2087,7 @@
 		)
 		(pin "1" (uuid "0341ebcb-82dc-4292-834a-8d3b6f768a50"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR011")
 					(unit 1)
@@ -2122,7 +2122,7 @@
 		)
 		(pin "1" (uuid "9b349514-f5ad-455e-be3f-233b43d7495f"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR012")
 					(unit 1)
@@ -2157,7 +2157,7 @@
 		)
 		(pin "1" (uuid "5aa503d4-f58e-421f-b01c-b078b0d15be4"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR013")
 					(unit 1)
@@ -2192,7 +2192,7 @@
 		)
 		(pin "1" (uuid "1b63390a-3ca6-4152-8f38-d2cea7d9a21f"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR014")
 					(unit 1)
@@ -2227,7 +2227,7 @@
 		)
 		(pin "1" (uuid "e7dd9899-a77c-49b7-849b-a05c1ed57577"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR015")
 					(unit 1)
@@ -2262,7 +2262,7 @@
 		)
 		(pin "1" (uuid "6b18e68b-4f25-4654-80a3-5dd52f2ec43c"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR016")
 					(unit 1)
@@ -2297,7 +2297,7 @@
 		)
 		(pin "1" (uuid "0d021fdf-c19b-452f-bd36-1c0bb3cfa53b"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR017")
 					(unit 1)
@@ -2332,7 +2332,7 @@
 		)
 		(pin "1" (uuid "fdb9cb7f-daf8-4251-960f-d66c9b403f64"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR018")
 					(unit 1)
@@ -2367,7 +2367,7 @@
 		)
 		(pin "1" (uuid "5e96f081-6b52-4033-ad49-46a90b1a72c2"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR019")
 					(unit 1)
@@ -2402,7 +2402,7 @@
 		)
 		(pin "1" (uuid "d2cc539c-7f32-4149-a51a-499bb7fee809"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR020")
 					(unit 1)
@@ -2437,7 +2437,7 @@
 		)
 		(pin "1" (uuid "79899d5d-4a15-4587-bf11-beb273833b14"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR021")
 					(unit 1)
@@ -2472,7 +2472,7 @@
 		)
 		(pin "1" (uuid "4a141e2e-a610-46a3-9038-aa00bc14ae3a"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR022")
 					(unit 1)
@@ -2507,7 +2507,7 @@
 		)
 		(pin "1" (uuid "0a1390d1-afba-40ac-961b-95ea44f625e9"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR023")
 					(unit 1)
@@ -2542,7 +2542,7 @@
 		)
 		(pin "1" (uuid "93ff9bc3-09e0-4baf-980d-d1df71f09524"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR024")
 					(unit 1)
@@ -2577,7 +2577,7 @@
 		)
 		(pin "1" (uuid "1047c551-e081-42e7-8bb9-7afe0daf4b68"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR025")
 					(unit 1)
@@ -2612,7 +2612,7 @@
 		)
 		(pin "1" (uuid "c1d73662-efe3-4a84-ae77-b6554d9bb631"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR026")
 					(unit 1)
@@ -2647,7 +2647,7 @@
 		)
 		(pin "1" (uuid "c2efef96-e22d-4e30-ad6f-31ceff904bd8"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR027")
 					(unit 1)
@@ -2682,7 +2682,7 @@
 		)
 		(pin "1" (uuid "963dc5c3-f7ee-4aea-8e09-01290aec36ad"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR028")
 					(unit 1)
@@ -2717,7 +2717,7 @@
 		)
 		(pin "1" (uuid "3eb64154-6c05-4cf1-8439-662866259aa2"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR029")
 					(unit 1)
@@ -2752,7 +2752,7 @@
 		)
 		(pin "1" (uuid "625c3e91-68f0-4b94-92de-d4f66ce8b9cd"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR030")
 					(unit 1)
@@ -2787,7 +2787,7 @@
 		)
 		(pin "1" (uuid "b73d483d-aabc-4f72-9857-cfda809b1db2"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR031")
 					(unit 1)
@@ -2822,7 +2822,7 @@
 		)
 		(pin "1" (uuid "61dac0da-3396-4e09-bbde-2e65584891fc"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR032")
 					(unit 1)
@@ -2857,7 +2857,7 @@
 		)
 		(pin "1" (uuid "fd6a7c2e-3c94-4c95-b8bb-e439746ea59c"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR033")
 					(unit 1)
@@ -2892,7 +2892,7 @@
 		)
 		(pin "1" (uuid "a4ff509c-223a-4aee-ac39-34a9efe457d3"))
 		(instances
-			(project "TrailCurrentSevenPinTrailerConnector"
+			(project "TrailCurrentAftline"
 				(path "/86f98bd6-ce0d-455d-9e10-e9c66bf3b7ae"
 					(reference "#PWR034")
 					(unit 1)
@@ -2917,7 +2917,7 @@
 	(junction (at 109.22 119.38000000000001) (diameter 0) (color 0 0 0 0) (uuid "c6860f75-2541-4c7c-8926-f3b6708f6d97"))
 	(junction (at 73.66 151.13) (diameter 0) (color 0 0 0 0) (uuid "bd301994-f760-47be-865b-9952eec71638"))
 	(junction (at 73.66 184.15) (diameter 0) (color 0 0 0 0) (uuid "7175ca6f-8169-4463-a373-6395098a596c"))
-	(text "TrailCurrent Seven Pin Trailer Connector Monitor"
+	(text "TrailCurrent Aftline"
 		(exclude_from_sim no)
 		(at 25.4 20.32 0)
 		(effects (font (size 3.81 3.81)) (justify left))
