@@ -1,21 +1,23 @@
-# KiCAD backup files
-*.bak
-*.backup
-*~
-*.kicad_pcb-bak
-*.sch-bak
-*.kicad_sch-bak
-*-backups/
-
-# KiCAD cache
-fp-info-cache
-
 # ESP-IDF
 build/
 sdkconfig
 sdkconfig.old
 managed_components/
 dependencies.lock
+
+# Build artifacts
+*.o
+*.a
+*.elf
+*.bin
+*.map
+
+# KiCAD backup files
+*.kicad_pcb-bak
+*.sch-bak
+*.kicad_sch-bak
+*-backups/
+fp-info-cache
 
 # IDEs
 .vscode/
@@ -42,14 +44,21 @@ CLAUDE.MD
 .tabnine*
 .sourcery.yaml
 
-# CRITICAL: Secrets - never commit credentials
-src/Secrets.h
-src/secrets.h
+# Secrets and credentials
+*.secrets
+.env
+.env.*
+credentials.json
 secrets.h
 
-# Temporary/backup files
+# Temporary files and backups
 *.orig
 *.tmp
+*.bak
+*.backup
+*~
+
+# Archives
 *.zip
 
 # FreeCAD temporary and backup files
