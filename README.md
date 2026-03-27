@@ -5,12 +5,14 @@ Firmware module that monitors the state of a 7-pin trailer connection including 
 ## Overview
 
 - **Microcontroller:** [Waveshare ESP32-C6-Zero](https://www.waveshare.com/esp32-c6-zero.htm?aff_id=Trailcurrent) — selected for its extensive documentation, small footprint, pre-soldered programming pins, castellations for direct PCB integration, and low power consumption
+- **Framework:** ESP-IDF (Espressif IoT Development Framework)
 - **Function:** Trailer connector monitoring with CAN bus reporting
 - **Key Features:**
   - Monitors trailer voltage, turn signals, brakes, and running lights
   - CAN bus communication at 500 kbps
-  - Over-the-air (OTA) firmware updates via WiFi
-  - RGB LED status indicator
+  - Over-the-air (OTA) firmware updates via HTTP
+  - mDNS device discovery for Headwaters integration
+  - WiFi credential provisioning via CAN bus
   - FreeRTOS-based asynchronous monitoring
   - Custom flash partition layout with dual OTA slots
 
@@ -20,79 +22,111 @@ Firmware module that monitors the state of a 7-pin trailer connection including 
 
 | GPIO | Function |
 |------|----------|
-| 2 | Trailer voltage sensing (analog) |
-| 3 | Left turn/brake line |
-| 4 | Right turn/brake line |
-| 5 | Electric brake line |
-| 0 | Running/tail lights |
-| 8 | RGB status LED |
+| 2 | Trailer voltage sensing (ADC) |
+| 3 | Left turn/brake line (digital input) |
+| 4 | Right turn/brake line (digital input) |
+| 5 | Electric brake line (digital input) |
+| 0 | Running/tail lights (digital input) |
 | 15 | CAN TX |
 | 14 | CAN RX |
 
 ## Firmware
 
-See `src/` directory for PlatformIO-based firmware.
+### Prerequisites
 
-**Setup:**
+Install ESP-IDF v5.x following the [official guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/get-started/).
+
+### Build and Flash
+
 ```bash
-# Install PlatformIO (if not already installed)
-pip install platformio
+# Set target to ESP32-C6
+idf.py set-target esp32c6
 
 # Build firmware
-pio run
+idf.py build
 
-# Upload to board (serial)
-pio run -t upload
+# Flash to board (serial)
+idf.py -p /dev/ttyACM0 flash
 
-# Upload via OTA (after initial flash)
-pio run -t upload --upload-port esp32c6-DEVICE_ID
+# Monitor serial output
+idf.py -p /dev/ttyACM0 monitor
 ```
 
-### Firmware Dependencies
+### WiFi Credential Provisioning
 
-This firmware depends on the following public libraries:
+WiFi credentials are provisioned over the CAN bus (ID `0x01`) using a chunked protocol. No hardcoded credentials are needed. The protocol works as follows:
 
-- **[C6SuperMiniRgbLedLibrary](https://github.com/trailcurrentoss/C6SuperMiniRgbLedLibrary)** (v0.0.1) - RGB LED status indicator driver
-- **[Esp32C6OtaUpdateLibrary](https://github.com/trailcurrentoss/Esp32C6OtaUpdateLibrary)** (v0.0.1) - Over-the-air firmware update functionality
-- **[Esp32C6TwaiTaskBasedLibrary](https://github.com/trailcurrentoss/Esp32C6TwaiTaskBasedLibrary)** (v0.0.2) - CAN bus communication interface
+1. **Start** `[0x01, ssid_len, password_len, ssid_chunks, password_chunks]`
+2. **SSID chunks** `[0x02, chunk_index, up to 6 bytes]` (repeat for each chunk)
+3. **Password chunks** `[0x03, chunk_index, up to 6 bytes]` (repeat for each chunk)
+4. **End** `[0x04, xor_checksum]`
 
-All dependencies are automatically resolved by PlatformIO during the build process.
-
-**WiFi Credentials (for OTA updates):**
-- Copy `src/Secrets.h.example` to `src/Secrets.h` and fill in your WiFi credentials
-- Never commit `Secrets.h` to version control (it's in `.gitignore`)
-
-### Monitoring Data
-
-The `TrailerConnection` class tracks:
-- Trailer connection voltage (analog reading)
-- Left turn/brake signal state
-- Right turn/brake signal state
-- Tail and running light state
-- Electric brake percentage
+Credentials are stored in NVS and persist across reboots.
 
 ### CAN Bus Protocol
 
-- **Receive ID `0x00`:** OTA update notifications - triggers firmware update when device ID matches
-- Monitoring runs on FreeRTOS core 0 with callback-based state change notifications
+**Speed:** 500 kbps
 
-## OTA Updates
+#### Receive Messages
 
-See `docs/OTA.md` for detailed over-the-air update documentation including the Python upload script.
+| ID | Function |
+|----|----------|
+| `0x00` | OTA trigger — 3 bytes matching last 3 MAC bytes of target device |
+| `0x01` | WiFi credential provisioning (chunked protocol) |
+| `0x02` | Discovery trigger (broadcast, no payload) |
+
+#### Transmit Messages
+
+| ID | Period | Function |
+|----|--------|----------|
+| `0x10` | 33 ms | Trailer status (3 bytes) |
+
+**Trailer Status Frame (0x10):**
+- Byte 0: Flags — `bit0`=connected, `bit1`=left turn, `bit2`=right turn, `bit3`=running lights, `bit4`=brakes
+- Byte 1-2: Trailer voltage in mV (big-endian)
+
+### OTA Firmware Updates
+
+OTA updates are triggered via CAN message ID `0x00` containing the last 3 bytes of the target device's MAC address. The device then:
+
+1. Connects to WiFi using stored credentials
+2. Starts an HTTP server with mDNS advertising (`{hostname}.local`)
+3. Accepts firmware upload at `POST /ota`
+4. Waits up to 3 minutes for an upload before returning to normal operation
+
+```bash
+# Upload firmware to a specific device
+curl -X POST http://esp32-XXYYZZ.local/ota --data-binary @build/aftline.bin
+```
+
+### Device Discovery
+
+Discovery is triggered via CAN broadcast (ID `0x02`). The device:
+
+1. Connects to WiFi
+2. Advertises `_trailcurrent._tcp` mDNS service with TXT records:
+   - `type=aftline`
+   - `canid=0x10`
+   - `fw={version}`
+3. Waits up to 3 minutes for Headwaters to confirm at `GET /discovery/confirm`
 
 ## Project Structure
 
 ```
-├── docs/
-│   └── OTA.md                    # OTA update documentation
-├── src/
-│   ├── Main.cpp                  # Main application
-│   ├── Globals.h                 # Debug macros and data structures
-│   ├── TrailerConnection.cpp     # Trailer monitoring class
-│   ├── TrailerConnection.h       # Trailer monitoring header
-│   └── Secrets.h.example         # WiFi credentials template
-├── platformio.ini                # Build configuration
-└── partitions.csv                # ESP32 flash partition layout
+├── main/
+│   ├── main.c               # Application entry point, trailer monitoring, CAN task
+│   ├── ota.c                 # OTA updates, WiFi management, credential provisioning
+│   ├── ota.h                 # OTA public API
+│   ├── discovery.c           # mDNS device discovery
+│   ├── discovery.h           # Discovery public API
+│   ├── CMakeLists.txt        # Component build configuration
+│   └── idf_component.yml     # Managed dependencies
+├── EDA/                      # KiCAD schematic and PCB design
+├── CAD/                      # Mechanical design files
+├── CMakeLists.txt            # Top-level ESP-IDF project configuration
+├── partitions.csv            # ESP32-C6 flash partition layout
+├── sdkconfig.defaults        # Default build configuration
+└── README.md                 # This file
 ```
 
 ## License
