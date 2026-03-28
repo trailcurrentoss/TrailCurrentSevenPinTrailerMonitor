@@ -257,5 +257,5 @@ void app_main(void)
     xTaskCreate(trailer_monitor_task, "trailer_mon", 2048, NULL, 10, NULL);
 
     // CAN runs in its own task so bus errors never block monitoring
-    xTaskCreate(twai_task, "twai", 4096, NULL, 5, NULL);
+    xTaskCreatePinnedToCore(twai_task, "twai", 4096, NULL, 5, NULL, 1);
 }
