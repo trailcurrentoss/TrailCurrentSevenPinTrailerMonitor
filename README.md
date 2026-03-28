@@ -4,7 +4,7 @@ Firmware module that monitors the state of a 7-pin trailer connection including 
 
 ## Overview
 
-- **Microcontroller:** [Waveshare ESP32-C6-Zero](https://www.waveshare.com/esp32-c6-zero.htm?aff_id=Trailcurrent) — selected for its extensive documentation, small footprint, pre-soldered programming pins, castellations for direct PCB integration, and low power consumption
+- **Hardware:** [Waveshare ESP32-S3-RS485-CAN](https://www.waveshare.com/esp32-s3-rs485-can.htm) — industrial-grade board with isolated CAN and RS485 interfaces, 7-36V DC input, ESP32-S3-WROOM-1 (16MB flash, 8MB PSRAM)
 - **Framework:** ESP-IDF (Espressif IoT Development Framework)
 - **Function:** Trailer connector monitoring with CAN bus reporting
 - **Key Features:**
@@ -16,7 +16,7 @@ Firmware module that monitors the state of a 7-pin trailer connection including 
   - FreeRTOS-based asynchronous monitoring
   - Custom flash partition layout with dual OTA slots
 
-## Hardware Requirements
+## Hardware
 
 ### Pin Connections
 
@@ -27,20 +27,27 @@ Firmware module that monitors the state of a 7-pin trailer connection including 
 | 4 | Right turn/brake line (digital input) |
 | 5 | Electric brake line (digital input) |
 | 0 | Running/tail lights (digital input) |
-| 15 | CAN TX |
-| 14 | CAN RX |
+| 15 | CAN TX (onboard isolated transceiver) |
+| 16 | CAN RX (onboard isolated transceiver) |
+
+### Onboard Interfaces (provided by board)
+
+- **CAN:** Isolated, 120-ohm termination resistor (jumper-selectable)
+- **RS485:** Isolated, GPIO17 TX / GPIO18 RX / GPIO21 EN
+- **Power:** 7-36V DC via screw terminal or 5V via USB-C
+- **USB:** Type-C for programming and debugging
 
 ## Firmware
 
 ### Prerequisites
 
-Install ESP-IDF v5.x following the [official guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/get-started/).
+Install ESP-IDF v5.x following the [official guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/get-started/).
 
 ### Build and Flash
 
 ```bash
-# Set target to ESP32-C6
-idf.py set-target esp32c6
+# Set target to ESP32-S3
+idf.py set-target esp32s3
 
 # Build firmware
 idf.py build
@@ -121,10 +128,8 @@ Discovery is triggered via CAN broadcast (ID `0x02`). The device:
 │   ├── discovery.h           # Discovery public API
 │   ├── CMakeLists.txt        # Component build configuration
 │   └── idf_component.yml     # Managed dependencies
-├── EDA/                      # KiCAD schematic and PCB design
-├── CAD/                      # Mechanical design files
 ├── CMakeLists.txt            # Top-level ESP-IDF project configuration
-├── partitions.csv            # ESP32-C6 flash partition layout
+├── partitions.csv            # ESP32-S3 flash partition layout
 ├── sdkconfig.defaults        # Default build configuration
 └── README.md                 # This file
 ```

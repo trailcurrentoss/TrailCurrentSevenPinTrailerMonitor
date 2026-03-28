@@ -12,7 +12,7 @@
 
 static const char *TAG = "aftline";
 
-// Waveshare ESP32-C6-Zero pin assignments
+// ESP32-S3 pin assignments
 #define TRAILER_VOLTAGE_PIN       ADC_CHANNEL_2   // GPIO 2
 #define TRAILER_LEFT_TURN_PIN     GPIO_NUM_3
 #define TRAILER_RIGHT_TURN_PIN    GPIO_NUM_4
@@ -20,7 +20,7 @@ static const char *TAG = "aftline";
 #define TRAILER_RUNNING_LIGHT_PIN GPIO_NUM_0
 
 #define CAN_TX_PIN   GPIO_NUM_15
-#define CAN_RX_PIN   GPIO_NUM_14
+#define CAN_RX_PIN   GPIO_NUM_16
 
 // CAN message identifiers
 #define CAN_ID_TRAILER_STATUS  0x10
@@ -60,7 +60,7 @@ static void trailer_monitor_task(void *arg)
         // Read analog trailer voltage
         int raw = 0;
         adc_oneshot_read(s_adc_handle, TRAILER_VOLTAGE_PIN, &raw);
-        // ESP32-C6 ADC is 12-bit (0-4095), 0-3.3V range
+        // ESP32-S3 ADC is 12-bit (0-4095), 0-3.3V range
         uint16_t mv = (uint16_t)((raw * 3300) / 4095);
 
         // Read digital inputs (active low with pull-up)
