@@ -81,6 +81,7 @@ Credentials are stored in NVS and persist across reboots.
 | `0x00` | OTA trigger — 3 bytes matching last 3 MAC bytes of target device |
 | `0x01` | WiFi credential provisioning (chunked protocol) |
 | `0x02` | Discovery trigger (broadcast, no payload) |
+| `0x04` | Version report — sent on boot: `[mac3, mac4, mac5, major, minor, patch]` |
 
 #### Transmit Messages
 
